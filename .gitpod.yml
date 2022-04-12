@@ -1,0 +1,17 @@
+tasks:
+  - name: Dependencies & Dev Server
+    init: npm ci
+    command: npm start
+
+# Ports to expose on workspace startup
+ports:
+  - port: 3000
+    onOpen: open-preview
+
+# VSCode Extensions
+vscode:
+  extensions:
+    - vsls-contrib.codetour
+
+image:
+  file: .gitpod.Dockerfile
