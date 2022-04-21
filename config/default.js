@@ -9,7 +9,7 @@ module.exports = {
             // locale: 'none',
             site: 'path',
             locale: 'path',
-            showDefault: true
+            showDefaults: true
             // This boolean value dictates whether or not default site or locale values are shown in the url. Defaults to: false
             // showDefaults: true
         },
