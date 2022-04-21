@@ -6,16 +6,24 @@ module.exports = {
             // Determine where the siteRef is located. Valid values include 'path|query_param|none'. Defaults to: 'none'
             // site: 'none',
             // Determine where the localeRef is located. Valid values include 'path|query_param|none'. Defaults to: 'none'
-            locale: 'none',
+            // locale: 'none',
+            site: 'path',
+            locale: 'path',
+            showDefault: true
             // This boolean value dictates whether or not default site or locale values are shown in the url. Defaults to: false
             // showDefaults: true
         },
         // The default site for your app. This value will be used when a siteRef could not be determined from the url
-        defaultSite: 'RefArch',
+        //defaultSite: 'RefArch',
         // Provide aliases for your sites. These will be used in place of your site id when generating paths throughout the application.
         // siteAliases: {
         //     RefArch: 'us'
         // },
+        defaultSite: 'RefArchGlobal',
+        siteAliases: {
+            RefArch: 'us',
+            RefArchGlobal: 'global'
+        },
         // The sites for your app, which is imported from sites.js
         sites,
         // Commerce api config

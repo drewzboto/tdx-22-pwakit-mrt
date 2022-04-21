@@ -10,10 +10,37 @@ module.exports = [
             supportedLocales: [
                 {
                     id: 'en-US',
-                    // alias: 'us',
+                    alias: 'us',
+                    preferredCurrency: 'USD'
+                },
+                {
+                    id: 'en-CA',
                     preferredCurrency: 'USD'
                 }
             ]
+        }
+    },
+    {
+        id: 'RefArchGlobal',
+        l10n: {
+            supportedCurrencies: ['GBP', 'EUR', 'JPY'],
+            defaultCurrency: 'GBP',
+            supportedLocales: [
+                {
+                    id: 'de-DE',
+                    alias: 'de',
+                    preferredCurrency: 'EUR'
+                },
+                {
+                    id: 'en-GB',
+                    preferredCurrency: 'GBP'
+                },
+                {
+                    id: 'ja-JP',
+                    preferredCurrency: 'JPY'
+                }
+            ],
+            defaultLocale: 'en-GB'
         }
     }
 ]
