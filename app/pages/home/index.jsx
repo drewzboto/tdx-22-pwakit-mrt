@@ -13,6 +13,7 @@ import {useIntl, FormattedMessage} from 'react-intl'
 import {
     Box,
     Button,
+    // Code,
     SimpleGrid,
     HStack,
     VStack,
@@ -64,6 +65,7 @@ const Home = ({productSearchResult, isLoading}) => {
                 }}
                 actions={
                     <Stack spacing={{base: 4, sm: 6}} direction={{base: 'column', sm: 'row'}}>
+                        {/* <Code colorScheme='teal' variant='solid' children='npx pwa-kit-create-app@2.0.0-dev.3 --preset retail-react-app-demo' /> */}
                         <Button
                             as={Link}
                             href="https://developer.salesforce.com/docs/commerce/pwa-kit-managed-runtime/guide/getting-started.html"
