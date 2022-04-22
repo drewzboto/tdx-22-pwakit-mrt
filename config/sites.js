@@ -37,6 +37,7 @@ module.exports = [
                 },
                 {
                     id: 'ja-JP',
+                    alias: 'jp',
                     preferredCurrency: 'JPY'
                 }
             ],
